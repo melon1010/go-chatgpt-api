@@ -40,7 +40,7 @@ func main() {
 }
 
 func setupChatGPTAPIs(router *gin.Engine) {
-	chatgptGroup := router.Group("/chatgpt")
+	chatgptGroup := router.Group("/api")
 	{
 		chatgptGroup.POST("/login", chatgpt.Login)
 
